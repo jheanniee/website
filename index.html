@@ -1,193 +1,306 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
+<html lang="en">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>   
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
 
-        <title>PCU | College of Informatics</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#courses" class="nav__link">Courses</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#faculty" class="nav__link">Faculty</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#organization" class="nav__link">Student Organization</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Mission & Vision</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Achievements</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">History</a>
-                        </li>
-                    </ul>
+    <title>PCU | College of Informatics</title>
+</head>
 
-                    <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link">Courses</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faculty" class="nav__link">Faculty</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#organization" class="nav__link">Student Organization</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#missionvision" class="nav__link">Mission & Vision</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#achievements" class="nav__link">Achievements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#history" class="nav__link">History</a>
+                    </li>
+                </ul>
+
+                <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <img src="assets/img/home.png" alt="" class="home__img">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__data-title"><b>College of <br> Informatics</b></h1>
+                    <span class="home__data-subtitle">Philippine Christian University</span><br><br><br>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <section class="home" id="home">
-                <img src="assets/img/home.jpg" alt="" class="home__img">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__data-subtitle">Philippine Christian University</span>
-                        <h1 class="home__data-title"><b>College of <br> Informatics</b></h1><br><br>
-                    </div>
-
-                    <!-- <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div> -->
-                </div>
-            </section>
-
-            <section class="about section">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title">College of Informatics</h2>
-                        
-                        <p class="about__description">Welcome to the College of Informatics, the path to thriving careers in computer engineering and information technology.<br><br>
-                            The academic programs offered by the college strive to educate students, inspire excellence in research and innovation, discover new knowledge, technologies, and systems, and embrace a culture of service.
-                        </p>
-                    </div>
-
-                    <div class="about__img">
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about.jpg" alt="" class="about__img-one">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="courses section" id="courses">
-                <h2 class="section__title">College of Informatics' Courses</h2>
-                
-                <div class="courses__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course1.png" alt="" class="courses__img">
-                        </div>
-
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course2.png" alt="" class="courses__img">
-                        </div>
-
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course3.png" alt="" class="courses__img">
-                        </div>
-
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course4.png" alt="" class="courses__img">
-                        </div>
-
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course5.png" alt="" class="courses__img">
-                        </div>
-
-                        <div class="courses__card swiper-slide">
-                            <img src="assets/img/course6.png" alt="" class="courses__img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="faculty section" id="faculty">
-                <h2 class="section__title">College of Informatics' Faculty</h2>
-
-                <div class="faculty__container container grid">
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty1.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty2.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty3.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty4.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty5.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty6.jpg" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty7.png" alt="" class="faculty__img">
-                    </div>
-
-                    <div class="faculty__card">
-                        <img src="assets/img/faculty8.png" alt="" class="faculty__img">
-                    </div>
-                </div>
-            </section>
-
-            <section class="organization section" id="organization">
-                <h2 class="section__title">College of Informatics' Student Organizations</h2>
-
-                <div class="organization__container container grid">
-                    <div class="organization__card">
-                        <img src="assets/img/org1.png" alt="" class="organization__img">                    
-                    </div>
-
-                    <div class="organization__card">
-                        <img src="assets/img/org2.jpg" alt="" class="organization__img">
-                    </div>
-                </div>
-            </section>
-          
-        </main>
-
-        <footer class="footer section">
-            <div class="footer__container container grid">          
-
-                <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2022. All rights reserved.<br>Christian A. Buela. Vince Andrew E. Ejemplar</p>
-                   
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+        <section class="about section">
+            <div class="about__container container">
+                <h2 class="section__title ">College of Informatics</h2>
+
+                <p class="about__description">Welcome to the College of Informatics, the path to thriving careers in
+                    computer engineering and information technology.<br><br>
+
+                    The academic programs offered by the college strive to educate students, inspire excellence in
+                    research and innovation, discover new knowledge, technologies, and systems, and embrace a
+                    culture of service. The college continues to conceive and develop programs to be at par with the
+                    advancement of modern global technology. Combined with PCU’s long-standing tradition of providing
+                    strong Christian education, the college offers a holistic education.<br><br>
+
+                    Integrating research, strong theoretical background, and hands-on experience in laboratories and
+                    practical immersions, students are given space to work in teams, develop collaboration, foster
+                    cooperation and connections, and engage in relevant and meaningful conversations guided by faculty
+                    members who are experts and specialists in their fields.<br><br>
+
+                    Believing that technological infrastructure, engineering industry, and research innovation are the
+                    cornerstones of our economy, the college endeavors to make meaningful and lasting contributions to
+                    the society by producing graduates who are critically aware and responsive to the needs of the
+                    times.
+                </p>
+            </div>
+        </section>
+
+        <section class="courses section" id="courses">
+            <h2 class="section__title">College of Informatics' Courses</h2>
+
+            <div class="courses__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course1.png" alt="" class="courses__img">
+                    </div>
+
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course2.png" alt="" class="courses__img">
+                    </div>
+
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course3.png" alt="" class="courses__img">
+                    </div>
+
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course4.png" alt="" class="courses__img">
+                    </div>
+
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course5.png" alt="" class="courses__img">
+                    </div>
+
+                    <div class="courses__card swiper-slide">
+                        <img src="assets/img/course6.png" alt="" class="courses__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faculty section" id="faculty">
+            <h2 class="section__title">College of Informatics' Faculty</h2>
+
+            <div class="faculty__container container grid">
+                <div class="faculty__card">
+                    <img src="assets/img/faculty1.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty2.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty3.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty4.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty5.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty6.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty7.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty8.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty9.jpg" alt="" class="faculty__img">
+                </div>
+
+                <div class="faculty__card">
+                    <img src="assets/img/faculty10.jpg" alt="" class="faculty__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="organization section" id="organization">
+            <h2 class="section__title">College of Informatics' Student Organizations</h2>
+
+            <div class="organization__container container grid">
+                <div class="organization__card">
+                    <img src="assets/img/org1.png" alt="" class="organization__img">
+                </div>
+
+                <div class="organization__card">
+                    <img src="assets/img/org2.jpg" alt="" class="organization__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="missionvision section" id="missionvision">
+            <h2 class="section__title">College of Informatics' Mission & Vision</h2>
+
+            <div class="missionvision__container container">
+                <div class="missionvision__content">
+                    <p class="missionvision__description"><strong>Mission</strong><br>The College of Engineering and
+                        Information Technology is committed to produce engineering and information technology
+                        professionals who are:<br><br>
+                        - Fully prepared and equipped to meet the challenges of engineering and information
+                        technology;<br>
+                        - Productive and responsible members of society;<br>
+                        - Proficient in their field and highly motivated to excel;<br>
+                        - Grounded in a deep faith in God and a commintment to serve.<br><br><br>
+                        <strong>Vision</strong><br>A center of excellence in engineering and information technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements section" id="achievements">
+            <h2 class="section__title">College of Informatics' Achievements</h2>
+
+            <div class="achievements__container container">
+                <div class="achievements__content">
+                    <img src="assets/img/achievements.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="history section" id="history">
+            <h2 class="section__title">College of Informatics' History</h2>
+
+            <div class="history__container container">
+                <div class="history__content">
+                    <p class="history__description">In 1945, Bishop Edwin F. Lee of the <strong>United Methodist Church
+                            (UMC)</strong> envisioned a Christian college in Manila. On October 6, 1946, Laymen of the
+                        Evangelical Association of the Philippines agreed to the establishment of the college. Their
+                        initial Board of Directors Was composed of Atty. Juan Nabong, Sr., Dr. Mateo Occena, Dr. Emilio
+                        Javier, D. Mauro Baradi, and Mr. Gerardo Armonio.<br><br>On January 11, 1947, the Articles of
+                        Incorporation was registered with the Securities and Exchange Commission. The original name of
+                        the institution was <strong>Manila Union University</strong> but this was later changed to
+                        <strong>Philippine Christian College</strong>. Dr. Roxy Lefforge, an American missionary, was
+                        the first Executive Dean.<br><br>
+
+                        Dr. Emilio Javier (1952-1958), an outstanding layman of the <strong> United Church of Christ in
+                            the Philippines (UCCP)</strong> was elected as the first President. Under his leadership the
+                        institution expanded the ecumenical efforts in education. The Union High School of Manila and
+                        Union Elementary School founded by the Presbyterian Church in 1919 and 1946 respectively became
+                        part of PCC in 1947. The college added a degree course in Nursing when the Mary Johnston School
+                        of Nursing, founded by the Methodist in 1907, affiliated with PCC in 1953.<br><br>
+
+                        Dr. Juan Nabong, Sr. (1958-1969), a Methodist layman, was the second President. Under his
+                        Administration, a four-storey concrete building was constructed in 1960 beside the UTS building
+                        on Taft Avenue. A year later, a two-storey building for the Elementary school was constructed in
+                        Vasquez Street, Malate. The Ellinwood College of Christian Education was merging with the
+                        Philippine Christian College in 1968 and its curricular programs integrated with the programs of
+                        the College of Education. Dr. Lino Q. Arquiza (1969-1988), a UCCP Educator, was the third
+                        President. Under him, the growth and expansion of PCC was steady and impressive. In 1976, PCC
+                        acquired its University status and Philippine Christian University. A highlight of the efforts
+                        at cooperation came during Dr. Arquiza’s term when the Union Theological Seminary and PCU merge
+                        in 1978. with the merger, the Philippine Christian Center for Learning (PCCL) was born.<br><br>
+
+                        The merger enabled PCU to expand its offerings in the 97-hectare UTS campus, 36 kilometers south
+                        of Manila. With this move, Philippine Christian University and Union Theological Seminary,
+                        established an ecumenical relationship that is more expansive and more coordinated.
+                        Institutional cooperation extended to non-protestant schools when in 1972, PCU and DLSU joined
+                        hands in a resource-sharing program. This move ushered in the formation of five-school Inter
+                        Institutional Consortium (I-IC) in 1975 composed of De La Salle University, St. Scholastica’s
+                        College, St. Paul’s College of Manila, Philippine Normal College and Philippine Christian
+                        University. The Consortium enjoys the full support of the United Board for Christian Higher
+                        Education in Asia.<br><br>
+
+                        With the untimely demise of Dr. Arquiza, PCU had a succession of two able and dedicated
+                        Officers-in-Charge in the persons of Justice Crisolito Pascual (1988) and Dean Betty I. Molina
+                        (1989). In 1990, the Board of Trustees elected Dr. Carlito S. Puno (1990-2000), a prominent
+                        Methodist lay leader, as the fourth president of the university. The new president of the
+                        university provided a new vision and a creative and dynamic leadership for the university. PCU
+                        became an active participant in the globalization of education. Under his leadership the
+                        university aggressively pursued a program expansion through the off-campus programs and the
+                        overseas institutional linkages.<br><br>
+
+                        Dr. Oscar S. Suarez, a Princeton University-educated UCCP pastor, became the fifth president of
+                        PCU. November 2008 – Appointed a Management Committee comprised of: Atty. Felix D. Carao Jr.
+                        (chairperson), retired Justice Wenceslao I. Agnir
+                        and Dr. Quintin S. Doromal. December 2013 – Election of Atty. Felix D. Carao Jr. as the 6th
+                        president of the University and the reconstitution of the Board of Trustees.The PCU Board of
+                        Trustees elected Dr. Junifen F. Gauuan, a United Methodist layman, as the 7th president of the
+                        University. May 2017 – the Commission on Higher Education (CHED) granted Autonomous Status to
+                        PCU.Today PCU had grown into an institution responsive to national needs through its expanded
+                        and relevant curricular offerings.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; <a href="https://pcu.edu.ph/" target="_blank"
+                        class="footer__pculink">pcu.edu.ph</a> All rights reserved.</p>
+                <p class="footer__copy">Christian A. Buela. Vince Andrew E. Ejemplar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
